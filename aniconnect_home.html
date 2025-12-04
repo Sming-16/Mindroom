@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AniConnect - Home</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#A7C7E7",
+              secondary: "#FFB6C1",
+              "text-main": "#4A4A4A",
+              "text-subtle": "#8A8A8A",
+              "background-light": "#F0F8FF",
+              "background-dark": "#111921",
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1a2632",
+              "border-light": "#E0E7FF",
+              "border-dark": "#2a3b4d",
+            },
+            fontFamily: {
+              display: ["Spline Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "1.5rem",
+              xl: "2rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-text-main dark:text-white/90"
+  >
+    <div class="relative flex min-h-screen w-full flex-col">
+      <header
+        class="sticky top-0 z-10 flex h-16 items-center justify-between border-b border-solid border-border-light dark:border-border-dark bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-sm px-4 md:px-8"
+      >
+        <div class="flex items-center gap-4">
+          <div class="flex items-center gap-2 text-text-main dark:text-white">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              >star</span
+            >
+            <h1 class="text-xl font-bold">AniConnect</h1>
+          </div>
+        </div>
+        <div class="hidden md:flex flex-1 max-w-md items-center justify-center">
+          <label class="flex flex-col w-full">
+            <div class="relative flex w-full items-center">
+              <span
+                class="material-symbols-outlined absolute left-3 text-text-subtle"
+                >search</span
+              >
+              <input
+                class="form-input w-full rounded-full border-0 bg-background-light dark:bg-background-dark py-2 pl-10 pr-4 text-sm text-text-main dark:text-white placeholder:text-text-subtle focus:ring-2 focus:ring-primary"
+                placeholder="Search for friends, topics, or posts..."
+                value=""
+              />
+            </div>
+          </label>
+        </div>
+        <div class="flex items-center gap-2">
+          <button
+            class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-background-light dark:bg-background-dark text-text-main dark:text-white"
+          >
+            <span class="material-symbols-outlined">notifications</span>
+          </button>
+          <button
+            class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-background-light dark:bg-background-dark text-text-main dark:text-white"
+          >
+            <span class="material-symbols-outlined">chat_bubble</span>
+          </button>
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 ml-2"
+            data-alt="User avatar image"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDzN67hWQt7LmHBLBUs8npI3sLOAqg5_4WHbErTchB7L0L4N5yOpj9mUhPL4kSV60FmuT77jlar9P8ZUrbmTwKH6qfg2oKpcA03hejMLl8uVX0RuxstWMVCS9KhdZKi3Z7Nio4FWrXKCqOJ2jT57I87_6-S1op9_jFNqhgxqHYhOA3OEh6frUfccxQQETIXveY7X9IKRQZKcMogQAylQ6vgX774KVfoJlfwQFewKMjRbaSs3NmOtGIyKimaOElQ2IgaJDYwh25IBpyw');
+            "
+          ></div>
+        </div>
+      </header>
+      <div
+        class="mx-auto flex w-full max-w-screen-xl grow gap-8 px-4 md:px-8 py-6"
+      >
+        <aside class="hidden lg:block w-64 flex-shrink-0">
+          <div class="sticky top-24 flex flex-col gap-6">
+            <div
+              class="flex flex-col gap-1 rounded-lg bg-surface-light dark:bg-surface-dark p-3"
+            >
+              <a
+                class="flex items-center gap-4 rounded-full bg-primary/20 dark:bg-primary/30 px-4 py-2 text-primary font-bold"
+                href="aniconnect_home.html"
+              >
+                <span class="material-symbols-outlined">home</span>
+                <p class="text-sm">Home</p>
+              </a>
+              <a
+                class="flex items-center gap-4 rounded-full px-4 py-2 text-text-main dark:text-white/90 hover:bg-black/5 dark:hover:bg-white/5"
+                href="#"
+              >
+                <span class="material-symbols-outlined">explore</span>
+                <p class="text-sm">Explore</p>
+              </a>
+              <a
+                class="flex items-center gap-4 rounded-full px-4 py-2 text-text-main dark:text-white/90 hover:bg-black/5 dark:hover:bg-white/5"
+                href="aniconnect_rooms.html"
+              >
+                <span class="material-symbols-outlined">groups</span>
+                <p class="text-sm">Topic Rooms</p>
+              </a>
+              <a
+                class="flex items-center gap-4 rounded-full px-4 py-2 text-text-main dark:text-white/90 hover:bg-black/5 dark:hover:bg-white/5"
+                href="aniconnect_chat.html"
+              >
+                <span class="material-symbols-outlined">chat_bubble</span>
+                <p class="text-sm">Messages</p>
+              </a>
+              <a
+                class="flex items-center gap-4 rounded-full px-4 py-2 text-text-main dark:text-white/90 hover:bg-black/5 dark:hover:bg-white/5"
+                href="aniconnect_ai.html"
+              >
+                <span class="material-symbols-outlined">psychology</span>
+                <p class="text-sm">Emotion AI Tool</p>
+              </a>
+              <a
+                class="flex items-center gap-4 rounded-full px-4 py-2 text-text-main dark:text-white/90 hover:bg-black/5 dark:hover:bg-white/5 mt-4 border-t border-border-light dark:border-border-dark pt-4"
+                href="cuteapp_dashboard.html"
+              >
+                <span class="material-symbols-outlined text-secondary"
+                  >school</span
+                >
+                <p class="text-sm font-bold text-secondary">
+                  CuteApp Dashboard
+                </p>
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h2 class="px-4 text-sm font-bold text-text-subtle">
+                Active Now
+              </h2>
+              <div class="flex flex-col gap-2">
+                <a
+                  class="flex items-center gap-3 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-full"
+                  href="aniconnect_chat.html"
+                >
+                  <div class="relative">
+                    <div
+                      class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8"
+                      data-alt="Friend avatar"
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6zoRWBc-SuKtcowgtp6slIPzU3T6VOi5rvYWXXzZyaiipoUN5LzohowS8sNoYrOMWgGAfxzpJBV7tN91mAan4rlWzFrAM6HZr3NFsq8z8IcRqrNdmZoKcNuPpHSkM2_8MAHWFO-6x2Tb0fhtoJ4m9kFHDYGJmC3KHcsUOsQI127zecgZr8BSG52WkoomEjIxD6MjD80jGPLL6arOPhVdH1fn4X-ifREDJBoaUmV82-N0kaNimWhesN0DWNwXFPRP3lvL9cbAYcqxm');
+                      "
+                    ></div>
+                    <div
+                      class="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full bg-green-400 border-2 border-background-light dark:border-background-dark"
+                    ></div>
+                  </div>
+                  <p
+                    class="text-sm font-medium text-text-main dark:text-white/90"
+                  >
+                    AikoChan
+                  </p>
+                </a>
+                <a
+                  class="flex items-center gap-3 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-full"
+                  href="#"
+                >
+                  <div class="relative">
+                    <div
+                      class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8"
+                      data-alt="Friend avatar"
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3hX6qx9rnYK6BZIhxL80IcVsgsekA7P9-ykotoQbZs5F_NC2h3USkq5qWHJlQTNRsf7GU0_mSFjJo8OJJ1KX9bvN0j8fSKd9HvNQ30kuLJ9hhGWk_al89GYRI81XleK_Au3wHu7izWPsXhz9d359ySD8xyak-XPWC-Y0kboMh22w_Ht__6QySLHW8kIRkmbZxWPSmjnKJWJ35r1as1lUwvycuXlMzG3nI5vhWK1ZQh3exMXBjClt0WubxzTbKIpALcMLYa1FlToUg');
+                      "
+                    ></div>
+                    <div
+                      class="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full bg-green-400 border-2 border-background-light dark:border-background-dark"
+                    ></div>
+                  </div>
+                  <p
+                    class="text-sm font-medium text-text-main dark:text-white/90"
+                  >
+                    Yuki
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <main class="w-full max-w-xl mx-auto flex flex-col gap-6">
+          <div
+            class="flex flex-col gap-3 rounded-lg bg-surface-light dark:bg-surface-dark p-4 shadow-sm"
+          >
+            <div class="flex items-center gap-3">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 shrink-0"
+                data-alt="User avatar"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvKuaoJXsYjPLQ3RXdEPEa7o7TglE9M_HIaeek4GPyx2ZaTqLDPSmSEXr0t0w56qIgeBMU2SrQA5pOuHpqcvE06ssE-5KbcE34otOkURfibYqkZlaEJugFMX17fKZ62I0SUuNLybWPJwEc-zZCAqn1TYsQjfLUj2kpQupAo_GHeXxgzG4OTU40iN1QGeVxSaSxDuJDndkRI4aTuDo5V9PujJQR-DzubgClWiz_ijSe8CBWTHCrc0VglCCURZQcb0WvzIZ1Sjj6h1H7');
+                "
+              ></div>
+              <input
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-full text-text-main dark:text-white/90 focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-background-light dark:bg-background-dark h-full placeholder:text-text-subtle text-sm"
+                placeholder="What do you want to share today?"
+              />
+            </div>
+            <hr class="border-border-light dark:border-border-dark" />
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <button
+                  class="flex items-center justify-center p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 text-text-subtle"
+                >
+                  <span class="material-symbols-outlined text-xl">image</span>
+                </button>
+                <button
+                  class="flex items-center justify-center p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 text-text-subtle"
+                >
+                  <span class="material-symbols-outlined text-xl"
+                    >videocam</span
+                  >
+                </button>
+                <button
+                  class="flex items-center justify-center p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 text-text-subtle"
+                >
+                  <span class="material-symbols-outlined text-xl">mood</span>
+                </button>
+              </div>
+              <button
+                class="min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-5 bg-primary text-white text-sm font-bold"
+              >
+                <span class="truncate">Post</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-2 rounded-lg bg-surface-light dark:bg-surface-dark p-4 shadow-sm"
+          >
+            <div class="flex items-center gap-3">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                data-alt="AikoChan's avatar"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBp-5V1s25jXns13lzDQlrYdrZjgTR5X1qnawJ5WjbuAh7tBrBHutTaqlRtYEKfe6K-Hqe4-KvzEBIfiDMgzHQB1sxjdsZo3BKyG0b2b2m178LkWdMi5ySNG7jOJv_hlfOmaXUL-lVagcuFN6dEdDIqhgYflYD1goE1-Vgy9sKki-mLlQavinlryjNzeINj_R9ulGPd0mqSCBNP7-Tq1FdPmUg725USo1Q_69uaRh7yYdMwdJLgjtTsClD_ar_t3yBB9-XfnuloRmmN');
+                "
+              ></div>
+              <div>
+                <p class="text-sm font-bold text-text-main dark:text-white">
+                  AikoChan
+                  <span class="font-normal text-text-subtle">posted in</span>
+                  Anime Figures
+                </p>
+                <p class="text-xs text-text-subtle">2 hours ago</p>
+              </div>
+            </div>
+            <p class="text-sm text-text-main dark:text-white/90 pt-2">
+              Just got this new figure, it's so cute! What do you all think? ✨
+              #KawaiiKorner
+            </p>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg mt-2"
+              data-alt="A cute anime figure on a desk"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbgDL8JcWf3cEXIB-gNDHB7F3puUekUZG9EQGCbqJLDPuCqM3Fak0VYp4k9edQEf6WFRICPzks2ih2hnzAVOoltGDFWc73BJcnT-aw0-lLjuIzLW0l9MjfLi-EzlQYYecNZTsu2QY9fAYRHP_BJtEHiK1fdlEnZ1aoAeyF32kQGbFDZzNS1T4kJO6SFaVN-KGsM8usjtRZz2TM4wgUbWSOJWeutKawop_riFomtWlCv_cHsxnc5sECMsfc7k-2Y1eGMB4HTBNzQ75H');
+              "
+            ></div>
+            <div
+              class="flex justify-between border-t border-border-light dark:border-border-dark mt-3 pt-1"
+            >
+              <div class="flex items-center justify-center gap-1">
+                <button
+                  class="flex items-center gap-1.5 px-3 py-2 rounded-full hover:bg-secondary/20 group"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-xl group-hover:scale-110 transition-transform"
+                    >favorite</span
+                  >
+                  <p class="text-xs font-bold text-secondary">1.2k</p>
+                </button>
+              </div>
+              <div class="flex items-center justify-center gap-1">
+                <button
+                  class="flex items-center gap-1.5 px-3 py-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 group"
+                >
+                  <span
+                    class="material-symbols-outlined text-text-subtle text-xl group-hover:scale-110 transition-transform"
+                    >chat_bubble</span
+                  >
+                  <p class="text-xs font-bold text-text-subtle">256</p>
+                </button>
+              </div>
+              <div class="flex items-center justify-center gap-1">
+                <button
+                  class="flex items-center gap-1.5 px-3 py-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 group"
+                >
+                  <span
+                    class="material-symbols-outlined text-text-subtle text-xl group-hover:scale-110 transition-transform"
+                    >send</span
+                  >
+                  <p class="text-xs font-bold text-text-subtle">128</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-2 rounded-lg bg-surface-light dark:bg-surface-dark p-4 shadow-sm"
+          >
+            <div class="flex items-center gap-3">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                data-alt="Kenji's avatar"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5xnHBpQ7iBrp-zq1EaorPDKCx_wTQNT71ErS4AI4gfU4263giuKuJ6n3yJZShPgjOLL-bdEhrR-4cfo5EaaCclo-AUejuo32GWtUixToyfJRiaOHwtMp5TdjVYThUeBfNQstInNWOnrdupobGMYCESxmeiDorir19ZaVxm4WVgwy7Wt0emiPJbKfUX3V5K8RJ509tQtBCGW3krow1qmJt-pNJKnyvLWpvufPvyjlY2XDdIq4qNp3_uLnNHP4yJaghZ3aHtUb2H7Ba');
+                "
+              ></div>
+              <div>
+                <p class="text-sm font-bold text-text-main dark:text-white">
+                  Kenji
+                  <span class="font-normal text-text-subtle">posted in</span>
+                  Fan Art Showcase
+                </p>
+                <p class="text-xs text-text-subtle">5 hours ago</p>
+              </div>
+            </div>
+            <p class="text-sm text-text-main dark:text-white/90 pt-2">
+              Finished my latest piece! Tried a new coloring style with pastel
+              colors. Hope you like it!
+            </p>
+            <div
+              class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-lg mt-2"
+              data-alt="A pastel-colored fan art of an anime character"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBH3TMAH6zknEVALnfc3kLEpkfk_BGyez5-v07KJa0P9JLjDqlQFzS9ysPf7w23Iak-VkrrXA5nAy5p9_mPrUHO-3GSSHTPxqXoYzjQjPH_sVHPjUFBTKLsci5yOA9Ys4LE74nimzO5cJbLdaY8MIYuRCLmjGdvJZLmg3q58WBHNg5rZe6RrkC218a6nf7dsS_-EErt2xROG3VqAdLusKFM_yEhQfEe_1cFUOQ2MHqJcDxu2jsiUVckTDh-pMrQyvuUGBYgTaT0tt-0');
+              "
+            ></div>
+            <div
+              class="flex justify-between border-t border-border-light dark:border-border-dark mt-3 pt-1"
+            >
+              <div class="flex items-center justify-center gap-1">
+                <button
+                  class="flex items-center gap-1.5 px-3 py-2 rounded-full hover:bg-secondary/20 group"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-xl group-hover:scale-110 transition-transform"
+                    >favorite</span
+                  >
+                  <p class="text-xs font-bold text-secondary">874</p>
+                </button>
+              </div>
+              <div class="flex items-center justify-center gap-1">
+                <button
+                  class="flex items-center gap-1.5 px-3 py-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 group"
+                >
+                  <span
+                    class="material-symbols-outlined text-text-subtle text-xl group-hover:scale-110 transition-transform"
+                    >chat_bubble</span
+                  >
+                  <p class="text-xs font-bold text-text-subtle">102</p>
+                </button>
+              </div>
+              <div class="flex items-center justify-center gap-1">
+                <button
+                  class="flex items-center gap-1.5 px-3 py-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 group"
+                >
+                  <span
+                    class="material-symbols-outlined text-text-subtle text-xl group-hover:scale-110 transition-transform"
+                    >send</span
+                  >
+                  <p class="text-xs font-bold text-text-subtle">55</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+        <aside class="hidden xl:block w-72 flex-shrink-0">
+          <div class="sticky top-24 flex flex-col gap-6">
+            <div
+              class="flex flex-col gap-4 rounded-lg bg-surface-light dark:bg-surface-dark p-4"
+            >
+              <h2 class="text-sm font-bold text-text-subtle">
+                Trending Topic Rooms
+              </h2>
+              <div class="flex flex-col gap-3">
+                <div>
+                  <p class="text-sm font-bold text-text-main dark:text-white">
+                    #AnimeSeason
+                  </p>
+                  <p class="text-xs text-text-subtle">12.5k posts</p>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-text-main dark:text-white">
+                    #GamingCorner
+                  </p>
+                  <p class="text-xs text-text-subtle">8.2k posts</p>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-text-main dark:text-white">
+                    #MangaReaders
+                  </p>
+                  <p class="text-xs text-text-subtle">6.7k posts</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-lg bg-surface-light dark:bg-surface-dark p-4"
+            >
+              <h2 class="text-sm font-bold text-text-subtle">
+                Upcoming Events
+              </h2>
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex flex-col items-center justify-center bg-primary/20 text-primary rounded-lg p-2"
+                >
+                  <span class="text-xs font-bold">JUL</span>
+                  <span class="text-lg font-bold">28</span>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-text-main dark:text-white">
+                    Community Movie Night
+                  </p>
+                  <p class="text-xs text-text-subtle">Watching "Your Name"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="fixed bottom-0 right-8 flex items-end gap-3">
+        <div
+          class="flex flex-col w-72 h-96 bg-surface-light dark:bg-surface-dark rounded-t-lg shadow-2xl"
+        >
+          <div
+            class="flex items-center justify-between p-3 border-b border-border-light dark:border-border-dark"
+          >
+            <div class="flex items-center gap-2">
+              <div class="relative">
+                <div
+                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8"
+                  data-alt="Friend avatar"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsD3ll2nUcSI9VaeDOQ7V6VQIjBS512XaJEWMOCXaJDmb026vz2D1G8nD-1d79QDBrdEv2J9uy1_9rK9XgAt0cyy0kju-xwjrMkIMtpBm370QJ7jzKakfRz0jDqCi5gLX9uugDDCaU25kOrs_Z5lloqm0hBRe-qMdaP4ZkeK-pTFLO9_lbbq1sxi32TwJux9njXmy6EpNhGO_Ht6in4mmGsO8gZBgmS4YIU3omyjBVQjbzHAvLtKWV2ZZnD-lgqR-gf7XX_OlJKm8p');
+                  "
+                ></div>
+                <div
+                  class="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-green-400 border border-surface-light dark:border-surface-dark"
+                ></div>
+              </div>
+              <p class="text-sm font-bold">AikoChan</p>
+            </div>
+            <button
+              class="p-1 rounded-full hover:bg-black/5 dark:hover:bg-white/5"
+            >
+              <span class="material-symbols-outlined text-xl text-text-subtle"
+                >close</span
+              >
+            </button>
+          </div>
+          <div class="flex-1 p-3 overflow-y-auto text-sm"></div>
+          <div class="p-2 border-t border-border-light dark:border-border-dark">
+            <input
+              class="form-input w-full rounded-full border-0 bg-background-light dark:bg-background-dark py-1.5 px-4 text-sm text-text-main dark:text-white placeholder:text-text-subtle focus:ring-2 focus:ring-primary"
+              placeholder="Type a message..."
+            />
+          </div>
+        </div>
+        <div
+          class="mb-0 flex h-12 w-48 cursor-pointer items-center justify-between rounded-t-lg bg-primary pl-4 pr-2 shadow-2xl"
+        >
+          <p class="text-white font-bold text-sm">Chat (2)</p>
+          <span class="material-symbols-outlined text-white">expand_less</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

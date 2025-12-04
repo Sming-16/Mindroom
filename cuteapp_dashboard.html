@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CuteApp Teacher Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4799eb",
+              "background-light": "#A7C7E7", // Pastel Blue
+              "background-dark": "#111921",
+              "card-light": "#FFFFFF",
+              "text-primary": "#111418",
+              "text-secondary": "#637588",
+              "accent-pink": "#FFB6C1",
+              "accent-yellow": "#FDFD96",
+              "accent-lavender": "#E6E6FA",
+            },
+            fontFamily: {
+              "display": ["Spline Sans", "Noto Sans", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "1rem",
+                "lg": "1.5rem",
+                "xl": "2rem",
+                "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-4">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-white/30 px-6 md:px-10 py-3 rounded-lg bg-white/50 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-text-primary">
+<div class="text-accent-pink size-8">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.25 14.5v-3.5H8.5v-3h2.25V7.5h3V11H16v3h-2.75v3.5h-3z"></path>
+</svg>
+</div>
+<h2 class="text-text-primary text-lg font-bold leading-tight tracking-[-0.015em]">CuteApp</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-text-primary text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Lớp học</a>
+<a class="text-text-primary text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Học sinh</a>
+<a class="text-text-primary text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Tin nhắn</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="relative flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-white text-text-primary gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0">
+<span class="material-symbols-outlined">notifications</span>
+<div class="absolute top-1.5 right-1.5 size-2.5 rounded-full bg-accent-pink border-2 border-white"></div>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Teacher's avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9HdwWgzPF5hL15RK4qelMd0yeRZsqnGdfAFNetp1N9WBlC-TdPx6QNyG-prkB3VHZH_vFdt_2U2M4_ZCWs0U2w2ScBX4PqwZROqRSh8qc9fHT5ZrSD4liBtHyEpFN4Nj6Lwxb7i5VJlflaxNipByk8N0zBDuIc9SPT1asj-ja9i_vedWP22SuIGrsINox__9eqas9BOyA5pcaYUiKa6eycCwPHvqOWTQIg6an52KnOl7g7KVmUpyqzj8UDHCj8mqLLVhJJVrt_SFC");'></div>
+</div>
+</header>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-text-primary text-4xl font-black leading-tight tracking-[-0.033em]">AI Gửi Vài Lưu Ý Nhỏ!</p>
+<p class="text-text-secondary text-base font-normal leading-normal">Cùng xem qua các cảnh báo gần đây nhé</p>
+</div>
+</div>
+<!-- Card List -->
+<div class="flex flex-col gap-6 p-4">
+<!-- Card 1 -->
+<div class="flex flex-col md:flex-row items-stretch justify-between gap-6 rounded-lg bg-card-light p-5 shadow-lg shadow-black/5 transition-transform hover:scale-[1.02]">
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-text-secondary text-sm font-normal leading-normal">Học sinh: Nguyễn Văn A</p>
+<p class="text-text-primary text-base font-bold leading-tight">Phát hiện nội dung có thể gây tiêu cực</p>
+<p class="text-text-secondary text-sm font-normal leading-normal">Bài đăng mới nhất của học sinh có chứa từ ngữ nhạy cảm.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-accent-pink/80 text-text-primary text-sm font-medium leading-normal w-fit hover:bg-accent-pink transition-colors">
+<span class="truncate">Xem chi tiết</span>
+</button>
+</div>
+<div class="w-full md:w-auto bg-center bg-no-repeat aspect-video md:aspect-square bg-cover rounded-lg flex-1 min-w-[150px]" data-alt="Illustration of a sad cloud" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGipnIQAC8lWKvmyRJFOZV6Dj2Km_O_ufiFHyiWigq8KfzyIBPwZcrnTFZIR6Lnn_OmQ51ezR9wV-gBYYLfEkRKBkJCck8CGhwxuc7VGs2LlipykW9OYSIXr6Z2Bxr3G2DLqc8HSqHkLp77bD-69pY-r0ujHFaXtVpwXNE_bKPhuZOrzCYz03mcUdR6DS7-Tj4JCpN45PEpm6whKM5Pw10ZHYGJdhgM9uPdtoCN8IGVbbdVOnSro6_gmimkmor0v0uvtcqGBb8NvC-");'></div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col md:flex-row items-stretch justify-between gap-6 rounded-lg bg-card-light p-5 shadow-lg shadow-black/5 transition-transform hover:scale-[1.02]">
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-text-secondary text-sm font-normal leading-normal">Học sinh: Trần Thị B</p>
+<p class="text-text-primary text-base font-bold leading-tight">Gợi ý: Học sinh ít tương tác</p>
+<p class="text-text-secondary text-sm font-normal leading-normal">Học sinh có dấu hiệu ít tương tác trong các hoạt động của lớp tuần này.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-accent-yellow/80 text-text-primary text-sm font-medium leading-normal w-fit hover:bg-accent-yellow transition-colors">
+<span class="truncate">Xem chi tiết</span>
+</button>
+</div>
+<div class="w-full md:w-auto bg-center bg-no-repeat aspect-video md:aspect-square bg-cover rounded-lg flex-1 min-w-[150px]" data-alt="Illustration of a lightbulb" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKpgqGs5djPP2dlORypwnfYkEqhc-9xr3wnF0ZDgelAvDZ_OKUIWutYXL_ImGxkBtISmoN1JN1VJmutdqhfFa6Grdde0oqCeB5PWB63hgamC_elMacRa3rE_Mra8_ZTbcF8mSpWuaovHzbvkY1FSxrkiqeu5VcO7BVRExZQmvyDq_zwP7O0biR7O3my7pjgR1J8npqf5eCJ2vxGyg7PylmQs9YyCMfhP1LRfzM4yjE5hYc-Ic7vjeM-PowEl5cy8fi5kC4RRlAZnWr");'></div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col md:flex-row items-stretch justify-between gap-6 rounded-lg bg-card-light p-5 shadow-lg shadow-black/5 transition-transform hover:scale-[1.02]">
+<div class="flex flex-[2_2_0px] flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="text-text-secondary text-sm font-normal leading-normal">Nhóm: Lớp 5A</p>
+<p class="text-text-primary text-base font-bold leading-tight">Phát hiện tranh luận có thể leo thang</p>
+<p class="text-text-secondary text-sm font-normal leading-normal">Một cuộc thảo luận trong nhóm chat đang có dấu hiệu căng thẳng.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-accent-lavender text-text-primary text-sm font-medium leading-normal w-fit hover:bg-accent-lavender/80 transition-colors">
+<span class="truncate">Xem chi tiết</span>
+</button>
+</div>
+<div class="w-full md:w-auto bg-center bg-no-repeat aspect-video md:aspect-square bg-cover rounded-lg flex-1 min-w-[150px]" data-alt="Illustration of cartoon characters arguing" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXrrecAEdYTiHcKOph18m_Lpwr46hDLNFlY1ix0x5Tp_EGtx2woDQ1cwmoUBGor4p62zeQZZnMPmNHICp_qL8VdWISJNixW1DdXay1QhIaEB9MUyqj8dnVEKHkdzt_2_wj8pbfUPpFLl60LeqZfy8cFdDytxkZEeuoZth6XPfp84QxZ8ptqvklLPzr_nIgQDD5GuFdLGxuJyJ7-Fdm6nBnvJewhPH1qJVcyqXYFXutewJOUZM1wzSNlT4ojAZfU5yRmkWgz49Hq4eW");'></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

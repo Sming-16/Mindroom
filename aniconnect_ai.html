@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Emotion AI Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#A0D2EB",
+                        "secondary": "#FBC4D6",
+                        "background-light": "#FEF9E7",
+                        "background-dark": "#111921",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1a2530",
+                        "text-light": "#111418",
+                        "text-dark": "#f0f2f4",
+                        "subtle-light": "#B2B2B2",
+                        "subtle-dark": "#637588",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "full": "9999px"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex h-16 items-center justify-between border-b border-solid border-secondary/50 dark:border-subtle-dark bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm px-4 md:px-8">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-secondary text-3xl">psychology</span>
+<h1 class="text-xl font-bold">Emotion AI Tool</h1>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 ml-2" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzN67hWQt7LmHBLBUs8npI3sLOAqg5_4WHbErTchB7L0L4N5yOpj9mUhPL4kSV60FmuT77jlar9P8ZUrbmTwKH6qfg2oKpcA03hejMLl8uVX0RuxstWMVCS9KhdZKi3Z7Nio4FWrXKCqOJ2jT57I87_6-S1op9_jFNqhgxqHYhOA3OEh6frUfccxQQETIXveY7X9IKRQZKcMogQAylQ6vgX774KVfoJlfwQFewKMjRbaSs3NmOtGIyKimaOElQ2IgaJDYwh25IBpyw");'></div>
+</div>
+</header>
+<div class="mx-auto flex w-full max-w-screen-xl grow gap-8 px-4 md:px-8 py-6">
+<aside class="hidden lg:block w-64 flex-shrink-0">
+    <div class="sticky top-24 flex flex-col gap-6">
+        <div class="flex flex-col gap-1 rounded-lg bg-card-light dark:bg-card-dark p-3 shadow-md">
+            <a class="flex items-center gap-4 rounded-full px-4 py-2 text-text-light dark:text-text-dark/90 hover:bg-black/5 dark:hover:bg-white/5" href="aniconnect_home.html">
+                <span class="material-symbols-outlined">home</span>
+                <p class="text-sm">Home</p>
+            </a>
+            <a class="flex items-center gap-4 rounded-full px-4 py-2 text-text-light dark:text-text-dark/90 hover:bg-black/5 dark:hover:bg-white/5" href="aniconnect_rooms.html">
+                <span class="material-symbols-outlined">groups</span>
+                <p class="text-sm">Topic Rooms</p>
+            </a>
+            <a class="flex items-center gap-4 rounded-full px-4 py-2 text-text-light dark:text-text-dark/90 hover:bg-black/5 dark:hover:bg-white/5" href="aniconnect_chat.html">
+                <span class="material-symbols-outlined">chat_bubble</span>
+                <p class="text-sm">Messages</p>
+            </a>
+            <a class="flex items-center gap-4 rounded-full bg-secondary/20 dark:bg-secondary/30 px-4 py-2 text-secondary font-bold" href="aniconnect_ai.html">
+                <span class="material-symbols-outlined">psychology</span>
+                <p class="text-sm">Emotion AI Tool</p>
+            </a>
+            <a class="flex items-center gap-4 rounded-full px-4 py-2 text-text-light dark:text-text-dark/90 hover:bg-black/5 dark:hover:bg-white/5 mt-4 border-t border-subtle-light/50 dark:border-subtle-dark pt-4" href="cuteapp_dashboard.html">
+                <span class="material-symbols-outlined text-text-light dark:text-text-dark/90">school</span>
+                <p class="text-sm font-bold">CuteApp Dashboard</p>
+            </a>
+        </div>
+    </div>
+</aside>
+<main class="w-full max-w-2xl mx-auto flex flex-col gap-6">
+<h1 class="text-3xl font-bold">Emotion AI Dashboard</h1>
+<p class="text-subtle-light dark:text-subtle-dark">Theo dõi và tương tác với AI để quản lý tâm trạng của bạn.</p>
+<div class="rounded-lg bg-card-light dark:bg-card-dark p-6 shadow-sm flex flex-col gap-4">
+<h2 class="text-xl font-bold border-b border-primary/30 pb-2">Tâm trạng tuần này</h2>
+<div class="flex items-center justify-around text-center">
+<div class="flex flex-col items-center">
+<div class="text-4xl">😊</div>
+<p class="text-sm font-bold mt-1 text-primary">Vui vẻ</p>
+<p class="text-xs text-subtle-light dark:text-subtle-dark">45%</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="text-4xl">😔</div>
+<p class="text-sm font-bold mt-1 text-secondary">Buồn bã</p>
+<p class="text-xs text-subtle-light dark:text-subtle-dark">20%</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="text-4xl">😡</div>
+<p class="text-sm font-bold mt-1 text-secondary">Căng thẳng</p>
+<p class="text-xs text-subtle-light dark:text-subtle-dark">10%</p>
+</div>
+</div>
+</div>
+<div class="rounded-lg bg-card-light dark:bg-card-dark p-6 shadow-sm flex flex-col items-center text-center">
+<div class="text-7xl">☁️</div>
+<div class="relative mt-4 rounded-lg bg-primary/30 dark:bg-primary/20 p-4">
+<p class="text-text-light dark:text-text-dark font-medium">"Tôi nhận thấy bạn đã sử dụng nhiều từ ngữ tích cực hơn 5% so với tuần trước! Cố gắng duy trì nhé!"</p>
+</div>
+<button class="mt-4 cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-secondary/80 text-text-light dark:text-text-dark text-sm font-bold hover:bg-secondary transition-colors">
+<span class="truncate">Gửi lời nhắn cho AI</span>
+</button>
+</div>
+</main>
+<aside class="hidden xl:block w-72 flex-shrink-0">
+    <div class="sticky top-24 flex flex-col gap-6">
+        <div class="rounded-lg bg-card-light dark:bg-card-dark p-4 shadow-sm">
+            <h2 class="text-sm font-bold mb-3">Chọn Ngày</h2>
+            <div class="grid grid-cols-7 gap-1 text-center">
+                <div class="text-xs text-subtle-light dark:text-subtle-dark">T2</div>
+                <div class="text-xs text-subtle-light dark:text-subtle-dark">T3</div>
+                <div class="text-xs text-subtle-light dark:text-subtle-dark">T4</div>
+                <div class="text-xs text-subtle-light dark:text-subtle-dark">T5</div>
+                <div class="text-xs text-subtle-light dark:text-subtle-dark">T6</div>
+                <div class="text-xs text-subtle-light dark:text-subtle-dark">T7</div>
+                <div class="text-xs text-subtle-light dark:text-subtle-dark">CN</div>
+                <div class="h-12 w-full"></div>
+                <div class="h-12 w-full"></div>
+                <div class="h-12 w-full"></div>
+                <div class="h-12 w-full"></div>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">1</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">2</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full bg-primary/40 text-text-light dark:text-text-dark font-bold">3</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">4</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">5</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">6</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">7</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">8</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">9</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">10</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">11</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">12</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">13</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">14</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">15</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">16</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">17</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">18</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">19</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">20</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">21</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">22</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">23</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">24</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">25</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">26</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">27</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">28</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">29</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">30</div></button>
+                <button class="h-12 w-full text-text-light dark:text-text-dark text-sm font-medium leading-normal"><div class="flex size-full items-center justify-center rounded-full hover:bg-primary/20">31</div></button>
+            </div>
+        </div>
+    </div>
+</aside>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ChitChat - Chọn phòng trò chuyện</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4799eb",
+            "background-light": "#E0F7FA", // Pastel Blue Background
+            "background-dark": "#111921",
+            "accent-pink": "#FFCDD2", // Pastel Pink Accent
+            "accent-blue": "#B2EBF2", // Darker Pastel Blue Accent
+            "text-main": "#424242" // Dark Gray Text
+          },
+          fontFamily: {
+            "display": ["Spline Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+      .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+      }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-main">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex h-16 items-center justify-between border-b border-solid border-b-gray-200 dark:border-white/10 bg-white/90 dark:bg-background-dark/90 backdrop-blur-sm px-4 md:px-8">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 text-text-main dark:text-white">
+<span class="material-symbols-outlined text-primary text-3xl">star</span>
+<h1 class="text-xl font-bold">AniConnect</h1>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-accent-blue/50 text-text-main dark:text-white">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 ml-2" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzN67hWQt7LmHBLBUs8npI3sLOAqg5_4WHbErTchB7L0L4N5yOpj9mUhPL4kSV60FmuT77jlar9P8ZUrbmTwKH6qfg2oKpcA03hejMLl8uVX0RuxstWMVCS9KhdZKi3Z7Nio4FWrXKCqOJ2jT57I87_6-S1op9_jFNqhgxqHYhOA3OEh6frUfccxQQETIXveY7X9IKRQZKcMogQAylQ6vgX774KVfoJlfwQFewKMjRbaSs3NmOtGIyKimaOElQ2IgaJDYwh25IBpyw");'></div>
+</div>
+</header>
+<div class="mx-auto flex w-full max-w-screen-xl grow gap-8 px-4 md:px-8 py-6">
+<aside class="hidden lg:block w-64 flex-shrink-0">
+    <div class="sticky top-24 flex flex-col gap-6">
+        <div class="flex flex-col gap-1 rounded-lg bg-white dark:bg-background-dark/50 p-3 shadow-md">
+            <a class="flex items-center gap-4 rounded-full px-4 py-2 text-text-main dark:text-white/90 hover:bg-black/5 dark:hover:bg-white/5" href="aniconnect_home.html">
+                <span class="material-symbols-outlined">home</span>
+                <p class="text-sm">Home</p>
+            </a>
+            <a class="flex items-center gap-4 rounded-full bg-primary/20 dark:bg-primary/30 px-4 py-2 text-primary font-bold" href="aniconnect_rooms.html">
+                <span class="material-symbols-outlined">groups</span>
+                <p class="text-sm">Topic Rooms</p>
+            </a>
+            <a class="flex items-center gap-4 rounded-full px-4 py-2 text-text-main dark:text-white/90 hover:bg-black/5 dark:hover:bg-white/5" href="aniconnect_chat.html">
+                <span class="material-symbols-outlined">chat_bubble</span>
+                <p class="text-sm">Messages</p>
+            </a>
+            <a class="flex items-center gap-4 rounded-full px-4 py-2 text-text-main dark:text-white/90 hover:bg-black/5 dark:hover:bg-white/5" href="aniconnect_ai.html">
+                <span class="material-symbols-outlined">psychology</span>
+                <p class="text-sm">Emotion AI Tool</p>
+            </a>
+            <a class="flex items-center gap-4 rounded-full px-4 py-2 text-text-main dark:text-white/90 hover:bg-black/5 dark:hover:bg-white/5 mt-4 border-t border-gray-200 dark:border-white/10 pt-4" href="cuteapp_dashboard.html">
+                <span class="material-symbols-outlined text-text-main dark:text-white/90">school</span>
+                <p class="text-sm font-bold">CuteApp Dashboard</p>
+            </a>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h2 class="px-4 text-sm font-bold text-text-main/70 dark:text-white/70">Bạn bè online</h2>
+            <div class="flex flex-col gap-2">
+                <a class="flex items-center gap-3 px-4 py-2 hover:bg-black/5 dark:hover:bg-white/5 rounded-full" href="#">
+                    <div class="relative">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8" data-alt="Friend avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6zoRWBc-SuKtcowgtp6slIPzU3T6VOi5rvYWXXzZyaiipoUN5LzohowS8sNoYrOMWgGAfxzpJBV7tN91mAan4rlWzFrAM6HZr3NFsq8z8IcRqrNdmZoKcNuPpHSkM2_8MAHWFO-6x2Tb0fhtoJ4m9kFHDYGJmC3KHcsUOsQI127zecgZr8BSG52WkoomEjIxD6MjD80jGPLL6arOPhVdH1fn4X-ifREDJBoaUmV82-N0kaNimWhesN0DWNwXFPRP3lvL9cbAYcqxm");'></div>
+                        <div class="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full bg-green-400 border-2 border-background-light dark:border-background-dark"></div>
+                    </div>
+                    <p class="text-sm font-medium text-text-main dark:text-white/90">AikoChan</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</aside>
+<main class="w-full max-w-2xl mx-auto flex flex-col gap-6">
+    <h1 class="text-3xl font-bold text-text-main dark:text-white/90">Topic Rooms</h1>
+    <p class="text-text-main/70 dark:text-white/70">Chọn phòng trò chuyện phù hợp với tâm trạng của bạn.</p>
+
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
+        <a class="flex items-stretch justify-between gap-4 rounded-lg bg-white p-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300" href="aniconnect_chat.html">
+            <div class="flex flex-col gap-1 flex-1">
+                <p class="text-text-main/70 text-sm font-normal leading-normal">156 thành viên</p>
+                <p class="text-text-main text-base font-bold leading-tight">Góc chia sẻ niềm vui</p>
+                <p class="text-text-main/70 text-xs font-normal leading-normal">Trò chuyện về sở thích, hoạt động yêu thích và khoảnh khắc tuyệt vời trong ngày.</p>
+            </div>
+            <div class="bg-accent-blue/50 bg-center bg-no-repeat aspect-square bg-cover size-16 rounded-lg flex-shrink-0" data-alt="Cute illustration of a star smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXrrecAEdY");'></div>
+        </a>
+        
+        <div class="flex items-stretch justify-between gap-4 rounded-lg bg-white p-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col gap-1 flex-1">
+                <p class="text-text-main/70 text-sm font-normal leading-normal">97 thành viên</p>
+                <p class="text-text-main text-base font-bold leading-tight">Chia sẻ một chút nỗi buồn</p>
+                <p class="text-text-main/70 text-xs font-normal leading-normal">Nơi bạn có thể tâm sự và nhận được lời động viên từ những người bạn khác.</p>
+            </div>
+            <div class="bg-accent-pink/50 bg-center bg-no-repeat aspect-square bg-cover size-16 rounded-lg flex-shrink-0" data-alt="Cute illustration of a heart with wings" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyuI0WQayobrvNIkHVp0DZNeb4Nj7fHdLETdvLhqOerca_xQxZKlEtYTa_-6Eh9cmkEJ4X4V548Hp8IIGfdC7IGA6o0ztqfNnwIjYEmblvCmf-cSlyQLK1Jv968DZIwZOMCUGGoy4cLOdQSHjAkQkIcEJxpkMRXzRYd9GSlvgiJCGsC-nGFHqmizYbcOAyni6N038t9sey6ONwzHaZmGqyjFwPaxbvtwYWhOIk_h27G9wlLkR4RUaGEbv71XoxUhek5s6xq62LWKj0");'></div>
+        </div>
+
+        <div class="flex items-stretch justify-between gap-4 rounded-lg bg-white p-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col gap-1 flex-1">
+                <p class="text-text-main/70 text-sm font-normal leading-normal">55 thành viên</p>
+                <p class="text-text-main text-base font-bold leading-tight">Giảm căng thẳng</p>
+                <p class="text-text-main/70 text-xs font-normal leading-normal">Thực hành các bài tập thư giãn ngắn, chia sẻ mẹo làm dịu tâm trí.</p>
+            </div>
+            <div class="bg-accent-blue/50 bg-center bg-no-repeat aspect-square bg-cover size-16 rounded-lg flex-shrink-0" data-alt="Cute illustration of a meditating person" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6zoRWBc-SuKtcowgtp6slIPzU3T6VOi5rvYWXXzZyaiipoUN5LzohowS8sNoYrOMWgGAfxzpJBV7tN91mAan4rlWzFrAM6HZr3NFsq8z8IcRqrNdmZoKcNuPpHSkM2_8MAHWFO-6x2Tb0fhtoJ4m9kFHDYGJmC3KHcsUOsQI127zecgZr8BSG52WkoomEjIxD6MjD80jGPLL6arOPhVdH1fn4X-ifREDJBoaUmV82-N0kaNimWhesN0DWNwXFPRP3lvL9cbAYcqxm5");'></div>
+        </div>
+
+        <div class="flex items-stretch justify-between gap-4 rounded-lg bg-white p-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col gap-1 flex-1">
+                <p class="text-text-main/70 text-sm font-normal leading-normal">112 thành viên</p>
+                <p class="text-text-main text-base font-bold leading-tight">Hỏi & Đáp kiến thức</p>
+                <p class="text-text-main/70 text-xs font-normal leading-normal">Trao đổi những câu hỏi học tập và khám phá các chủ đề thú vị.</p>
+            </div>
+            <div class="bg-accent-pink/50 bg-center bg-no-repeat aspect-square bg-cover size-16 rounded-lg flex-shrink-0" data-alt="Cute illustration of a magnifying glass" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6zoRWBc-SuKtcowgtp6slIPzU3T6VOi5rvYWXXzZyaiipoUN5LzohowS8sNoYrOMWgGAfxzpJBV7tN91mAan4rlWzFrAM6HZr3NFsq8z8IcRqrNdmZoKcNuPpHSkM2_8MAHWFO-6x2Tb0fhtoJ4m9kFHDYGJmC3KHcsUOsQI127zecgZr8BSG52WkoomEjIxD6MjD80jGPLL6arOPhVdH1fn4X-ifREDJBoaUmV82-N0kaNimWhesN0DWNwXFPRP3lvL9cbAYcqxm6");'></div>
+        </div>
+    </div>
+</main>
+<aside class="hidden xl:block w-72 flex-shrink-0">
+    <div class="sticky top-24 flex flex-col gap-6">
+        <div class="flex flex-col gap-4 rounded-lg bg-white p-4 shadow-sm">
+            <h2 class="text-sm font-bold text-text-main/70">Quick Join</h2>
+            <p class="text-xs text-text-main/70">Phòng Trò chuyện về "Anime mùa mới" đang rất sôi nổi!</p>
+            <button class="w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-9 px-4 bg-primary text-white text-sm font-bold">
+                <span class="truncate">Join Now</span>
+            </button>
+        </div>
+    </div>
+</aside>
+</div>
+</div>
+</body></html>
